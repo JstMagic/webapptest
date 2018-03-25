@@ -1,6 +1,41 @@
 webapptest
 ==========
 
+How to run
+
+this test has been migrated into use Spring framework, the reason been able to demonstrate my skills with the spring framework
+
+There is a Jar file included in this project and this is located in :
+        target/interview-0.0.1-SNAPSHOT.jar
+
+to run the jar file in command prompt then issue the following command while inside the target folder
+        java -jar interview-0.0.1-SNAPSHOT.jar
+
+to run using maven withing the project directory then issue the following command
+        mvn clean install spring-boot:run
+if port 8080 is in use then use the following command
+        mvn clean install spring-boot:run -Drun.jvmArguments='-Dserver.port=8085'
+
+There is an embeded server (Tomcat) and embeded database (HSQL), no configuration needed
+
+
+if you aren't too keen on viewing the result in the console you can view the result on the browser
+       to view everyone in all phonebook
+         http://localhost:8080/phonebook/
+       to view a single contact based on person id
+        link =  http://localhost:8080/phonebook/1
+       to delete a contact
+        http://localhost:8080/phonebook/remove/2
+       to add a contact
+        http://localhost:8080/phonebook/add/Mart/person?name=Ben&lastName=Joe&address=21 millers road&phoneNumber=0792638521
+
+this project was re-written using IntelliJ but can be easily ported into eclipse by click file and import project
+scan the directory for a maven file or run mvn clean build in command prompt within the directory after importing the project
+Some of the classes have been marked as Deprecated for backward compatibility but there isnt anyneed for this in this project
+
+
+
+Scope of test
 Test for interviews
 
 This test is designed to give an overview of your capabilities as a java developer.  The ultimate goal of the test is spelled out in the main method of src/com/proquest/interview/phonebook/PhoneBookImpl.

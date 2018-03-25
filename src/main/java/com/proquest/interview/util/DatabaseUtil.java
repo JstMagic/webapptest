@@ -1,4 +1,4 @@
-package com.proquest.interview.util;
+package main.java.com.proquest.interview.util;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -9,7 +9,12 @@ import java.sql.Statement;
  * This class is just a utility class, you should not have to change anything here
  * @author rconklin
  */
+@Deprecated
+/**
+ * this class is no longer needed, left here for backward compatibility
+ */
 public class DatabaseUtil {
+	@Deprecated
 	public static void initDB() {
 		try {
 			Connection cn = getConnection();

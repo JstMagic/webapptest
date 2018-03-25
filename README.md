@@ -5,8 +5,11 @@ How to run
 
 this test has been migrated to use Spring framework, the reason is to be able to demonstrate my skills with the spring framework
 
-*#There is a Jar file included in this project and this is located in :
+*#There is no Jar file included in this project and this will usually be located at :
         target/interview-0.0.1-SNAPSHOT.jar
+        
+ to install the jar from command prompt type this back while in the project dir
+        mvn clean install
 
 *#to run the jar file in command prompt issue the following command while inside the target folder
         java -jar interview-0.0.1-SNAPSHOT.jar
